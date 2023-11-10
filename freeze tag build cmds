@@ -1,0 +1,3 @@
+git clone --single-branch --branch freeze-tag https://github.com/Amethyst-szs/SuperMarioOdysseyOnline/ freeze-tag
+cd freeze-tag/
+./docker-build.sh
