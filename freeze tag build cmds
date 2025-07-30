@@ -1,1 +1,8 @@
-git clone --single-branch --branch freeze-tag https://github.com/Amethyst-szs/SuperMarioOdysseyOnline/ freeze-tag
+# clone a repo
+git clone https://github.com/Amethyst-szs/SuperMarioOdysseyOnline.git -b freeze-tag
+
+# build smoo server
+dotnet build ./Server/Server.csproj  -c Release --self-contained -r win-x64 -p:publishSingleFile=true
+dotnet publish Server -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:IncludeAllContentForSelfExtract=true
+
+ 
